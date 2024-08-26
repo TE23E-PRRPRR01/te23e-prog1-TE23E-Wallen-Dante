@@ -1,6 +1,6 @@
 ﻿Console.Clear();
 
-//Console.BackgroundColor = ConsoleColor.Cyan;
+//Console.BackgroundColor = ConsoleColor.Black;
 //Console.ForegroundColor = ConsoleColor.White;
 
 Console.WriteLine("Morsning tågkorsning!");

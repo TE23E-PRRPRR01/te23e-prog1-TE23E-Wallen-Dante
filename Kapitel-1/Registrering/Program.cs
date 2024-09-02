@@ -13,6 +13,7 @@ string lastName = Console.ReadLine();
 if (firstName == "Dante" && lastName == "Wallén")
 {
     Console.WriteLine("Nej men titta vem som loggade in!");
+    Console.Write("Vad har du haft för dig sedan sist?");
 } else {
     Console.WriteLine("Hej " + firstName + " " + lastName + "!");
 }

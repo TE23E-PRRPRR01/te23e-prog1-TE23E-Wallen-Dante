@@ -10,11 +10,9 @@ string firstName = Console.ReadLine();
 Console.Write("Ange efternamn: ");
 string lastName = Console.ReadLine();
 
-Console.WriteLine("Hej " + firstName + " " + lastName + "!");
-// Console.WriteLine($"Hej {firstName} {lastName}!");
-
-// Är det Dante Wallén som loggar in
 if (firstName == "Dante" && lastName == "Wallén")
 {
     Console.WriteLine("Nej men titta vem som loggade in!");
+} else {
+    Console.WriteLine("Hej " + firstName + " " + lastName + "!");
 }

@@ -56,8 +56,4 @@ if (answer == "y")
             }
         }
     }
-
-else
-    {
-        Console.WriteLine("Fortsättning följer.");
-    }
+}

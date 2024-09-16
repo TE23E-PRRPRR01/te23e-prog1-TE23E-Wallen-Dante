@@ -21,4 +21,3 @@ int totalKostnad = kostnadPerMil + kostnadPerDag + 500;
 
 // Presenterar den slutgiltiga kostnaden för personen som ska hyra en bil
 Console.WriteLine($"Det kommer att kosta {totalKostnad} kr att hyra en bil hos oss.");
-

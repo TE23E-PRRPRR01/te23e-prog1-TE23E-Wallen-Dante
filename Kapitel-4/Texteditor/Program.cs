@@ -30,12 +30,13 @@ while (true)
     {
         Console.WriteLine("Du har valt att läsa av en text från en textfil. Skriv in filnamnet på filen du vill läsa av nedan.");
         filename = Console.ReadLine();
+        filename += ".txt";
 
         Console.WriteLine("""
         ----------------------------------------------
 
         """);
-        File.ReadAllText($"{filename}.txt");
+        File.ReadAllText(filename);
         Console.WriteLine("""
 
         ----------------------------------------------

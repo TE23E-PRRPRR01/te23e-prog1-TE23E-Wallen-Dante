@@ -2,7 +2,7 @@
     "workbench.colorTheme": "Default Dark Modern",
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.colorCustomizations": {
-        "activityBar.background": "#023b41",
+        "activityBar.background": "#00201a",
         "titleBar.activeBackground": "#023b41",
         "titleBar.activeForeground": "#ffffff"
     },

@@ -84,7 +84,7 @@ if (answer == "y")
         }
 
         // Om något blev fel, svara med att något blev fel och loopa om
-        :
+        
         else
         {
             Console.WriteLine("""

@@ -4,10 +4,12 @@
 Console.WriteLine("Välkommen till det här programmet med en eller kanske flera listor");
 
 // Lista för namn
-List<string> namnlista = new List<string> { "Dante", "Cal", "Benji", "Deniss", "Maljos" };
+List<string> namnlista = new List<string> { "Dante", "Cal", "Benji", "Deniss", "Maljos", "Daria" };
 
-// Skriver ut alla namn ur listan på ett snyggt sätt (med ett kommatecken och ett mellanslag emellan)
+// Skriver ut alla namn ur listan på ett snyggt sätt (med ett kommatecken, mellanslag, samt grön bakgrundsfärg)
+Console.BackgroundColor = ConsoleColor.DarkGray;
 Console.WriteLine(string.Join(", ", namnlista));
+Console.ResetColor();
 
 // Meddelande som frågar ifall användaren vill modifiera listan
 Console.WriteLine("Vill du lägga till eller ta bort ett namn från listan? (y/n)");
@@ -46,12 +48,16 @@ if (answer == "y")
             {
                 namnlista.Add(namnAttAdda);
                 Console.WriteLine($"Namnet {namnAttAdda} har lagts till i listan. Listan ser nu ut såhär:");
+                Console.BackgroundColor = ConsoleColor.DarkGray;
                 Console.WriteLine(string.Join(", ", namnlista));
+                Console.ResetColor();
             }
             else
             {
                 Console.WriteLine("Namnet du angav finns redan med i listan. Kom ihåg att detta är namnen som redan finns med:");
+                Console.BackgroundColor = ConsoleColor.DarkGray;
                 Console.WriteLine(string.Join(", ", namnlista));
+                Console.ResetColor();
             }
         }
         
@@ -67,12 +73,16 @@ if (answer == "y")
             {
                 namnlista.Remove(namnAttTaBort);
                 Console.WriteLine($"Namnet {namnAttTaBort} har tagits bort från listan. Listan ser nu ut såhär:");
+                Console.BackgroundColor = ConsoleColor.DarkGray;
                 Console.WriteLine(string.Join(", ", namnlista));
+                Console.ResetColor();
             }
             else
             {
                 Console.WriteLine("Namnet du angav finns inte med i listan. Kom ihåg att detta är namnen du kan välja mellan:");
+                Console.BackgroundColor = ConsoleColor.DarkGray;
                 Console.WriteLine(string.Join(", ", namnlista));
+                Console.ResetColor();
             }
         }
 
@@ -88,7 +98,7 @@ if (answer == "y")
         else
         {
             Console.WriteLine("""
-            Nu blev nåt fel. Kom ihåg:
+            Nu blev något fel. Kom ihåg:
             """);
         }
     }

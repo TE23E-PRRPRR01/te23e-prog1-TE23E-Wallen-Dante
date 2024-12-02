@@ -60,7 +60,7 @@ if (answer == "y")
                 Console.ResetColor();
             }
         }
-        
+
         // Om användaren svarade '-' och vill ta bort ett namn:
         else if (alternative == "-")
         {
@@ -94,7 +94,7 @@ if (answer == "y")
         }
 
         // Om något blev fel, svara med att något blev fel och loopa om
-        
+
         else
         {
             Console.WriteLine("""

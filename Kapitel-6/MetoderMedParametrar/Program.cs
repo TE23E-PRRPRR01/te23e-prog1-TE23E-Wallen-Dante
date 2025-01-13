@@ -26,9 +26,17 @@ SkrivVertikalt("Tisdag"); // Kallar på metoden 'SkrivVertikalt' med innehållet
 // SKRIV UT FYRKANT MED SYMBOLER - utan kommentarer *
 //***************************************************
 
-Console.Clear(); // Kommentera ut den här om du vill se resultatet av den ovanstående koden
+Console.Clear(); // Kommentera ut den här om du vill se resultatet av resterande kod
 
 RitaFyrkant(3);
+
+//****************************************************************
+// SKRIV UT MEDDELANDE ETT VISST ANTAL GÅNGER - utan kommentarer *
+//****************************************************************
+
+Console.Clear(); // Kommentera ut den här om du vill se resultatet av resterande kod
+
+SkrivMeddelande("Detta kommer upprepas så här många gånger --> ", 5);
 
 /****************************************************************************
 *                              M E T O D E R                                *
@@ -60,5 +68,18 @@ static void RitaFyrkant(int sidlängd)
             Console.Write("■ ");
         }
         Console.WriteLine();
+    }
+}
+
+/// <summary>
+/// Metod för att skriva ut meddelande ett visst antal gånger
+/// </summary>
+/// <param name="text">Text i meddelande</param>
+/// <param name="antal">Antal upprepningar</param>
+static void SkrivMeddelande(string text, int antal){
+
+    for (var i = 0; i < antal; i++)
+    {
+        Console.WriteLine(text + antal);
     }
 }

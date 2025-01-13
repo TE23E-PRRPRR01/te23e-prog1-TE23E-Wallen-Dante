@@ -38,6 +38,20 @@ Console.Clear(); // Kommentera ut den här om du vill se resultatet av resterand
 
 SkrivMeddelande("Detta kommer upprepas så här många gånger --> ", 5);
 
+//****************************************************************
+// SKRIV UT TEMP FRÅN CELSIUS TILL FAHRENHEIT - utan kommentarer *
+//****************************************************************
+
+Console.Clear(); // Kommentera ut den här om du vill se resultatet av resterande kod
+
+OmvandlaCelsius(5);
+
+//************************************************
+// SLÅ TÄRNING (SLUMPTAL) ETT VISST ANTAL GÅNGER *
+//************************************************
+
+SlåTärning(Random.Shared.Next(1, 7), 5); // Metod som kallar en sexsiffrig tärning (random) som ska kastas 5 gånger
+
 /****************************************************************************
 *                              M E T O D E R                                *
 ****************************************************************************/
@@ -76,10 +90,42 @@ static void RitaFyrkant(int sidlängd)
 /// </summary>
 /// <param name="text">Text i meddelande</param>
 /// <param name="antal">Antal upprepningar</param>
-static void SkrivMeddelande(string text, int antal){
+static void SkrivMeddelande(string text, int antal)
+{
 
     for (var i = 0; i < antal; i++)
     {
         Console.WriteLine(text + antal);
+    }
+}
+
+/// <summary>
+/// Omvandla Celsius till Fahrenheit
+/// </summary>
+/// <param name="temp">Temperatur</param>
+static void OmvandlaCelsius(int temp)
+{
+    Console.Write($"{temp}°C motsvarar {temp * 9 / 5 + 32}F");
+}
+
+/// <summary>
+/// Omvandla Celsius till Fahrenheit (ineffektivt sätt att göra det på)
+/// </summary>
+/// <param name="celsius">Temperatur i Celsius</param>
+/* void OmvandlaCelsiusIneffektiv(int celsius) {
+    int fahrenheit = celsius * 9/5 + 32;
+    Console.Write($"{celsius}°C motsvarar {fahrenheit}F");
+}*/
+
+/// <summary>
+/// Slå en tärning ett visst antal gånger
+/// </summary>
+/// <param name="randomNummer">Slumptal - definierar tärningens storlek</param>
+/// <param name="antalKast">Antal kast med tärning</param>
+static void SlåTärning(int randomNummer, int antalKast)
+{
+    for (var i = 0; i < antalKast; i++) // For-loop som loopar 'antalKast' gånger
+    {
+        Console.WriteLine(randomNummer); // Skriver ut random-nummer baserat på inmatning i metodens kallelse
     }
 }
